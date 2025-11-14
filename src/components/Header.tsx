@@ -19,11 +19,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="South Rock Law" className="h-12 w-12" />
-            <div>
-              <h1 className="text-xl font-bold text-primary">South Rock Law</h1>
-              <p className="text-xs text-muted-foreground">White Rock • South Surrey</p>
-            </div>
+            <img src={logo} alt="South Rock Law" className="h-10" />
           </div>
 
           {/* Desktop Navigation */}
