@@ -1,41 +1,52 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/south-rock-law-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
-    }
-  };
+  const location = useLocation();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="South Rock Law" className="h-10" />
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <button onClick={() => scrollToSection("services")} className="text-foreground hover:text-accent transition-colors">
+            <Link 
+              to="/" 
+              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/services" 
+              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
+            >
               Services
-            </button>
-            <button onClick={() => scrollToSection("about")} className="text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link 
+              to="/about" 
+              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
+            >
               About
-            </button>
-            <button onClick={() => scrollToSection("contact")} className="text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
+            >
               Contact
-            </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-accent text-accent-foreground hover:bg-accent/90">
-              Get In Touch
-            </Button>
+            </Link>
+            <Link to="/contact">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
+                Get In Touch
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -47,18 +58,39 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4">
-            <button onClick={() => scrollToSection("services")} className="text-left text-foreground hover:text-accent transition-colors">
+            <Link 
+              to="/" 
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/services" 
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
+            >
               Services
-            </button>
-            <button onClick={() => scrollToSection("about")} className="text-left text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link 
+              to="/about" 
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
+            >
               About
-            </button>
-            <button onClick={() => scrollToSection("contact")} className="text-left text-foreground hover:text-accent transition-colors">
+            </Link>
+            <Link 
+              to="/contact" 
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
+            >
               Contact
-            </button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
-              Get In Touch
-            </Button>
+            </Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
+                Get In Touch
+              </Button>
+            </Link>
           </nav>
         )}
       </div>
