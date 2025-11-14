@@ -1,13 +1,8 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -26,21 +21,23 @@ const Hero = () => {
           Serving White Rock and South Surrey with expertise in litigation, corporate law, real estate, and more
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            size="lg" 
-            onClick={scrollToContact}
-            className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8"
-          >
-            Schedule Consultation
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-            className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8"
-          >
-            Our Services
-          </Button>
+          <Link to="/contact">
+            <Button 
+              size="lg" 
+              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8"
+            >
+              Schedule Consultation
+            </Button>
+          </Link>
+          <Link to="/services">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8"
+            >
+              Our Services
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
