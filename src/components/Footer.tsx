@@ -6,12 +6,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <img src={logo} alt="South Rock Law" className="h-10 w-10" />
-              <div>
-                <h3 className="text-lg font-bold">South Rock Law</h3>
-                <p className="text-sm text-primary-foreground/80">Legal Excellence</p>
-              </div>
+            <div className="mb-4">
+              <img src={logo} alt="South Rock Law" className="h-12 mb-2 brightness-0 invert" />
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Trusted legal counsel serving White Rock and South Surrey, British Columbia
