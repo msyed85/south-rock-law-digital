@@ -109,15 +109,23 @@ const Contact = () => {
                   <MapPin className="text-ocean mt-1 flex-shrink-0" size={20} />
                   <div>
                     <p className="font-semibold text-foreground">Address</p>
-                    <p className="text-muted-foreground">White Rock, South Surrey<br />British Columbia, Canada</p>
+                    <p className="text-muted-foreground">404-1688 152 St<br />Surrey, BC, V4A 4N2</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
                   <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
                   <div>
-                    <p className="font-semibold text-foreground">Phone</p>
-                    <p className="text-muted-foreground">(604) XXX-XXXX</p>
+                    <p className="font-semibold text-foreground">Telephone</p>
+                    <p className="text-muted-foreground">604-449-7705</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
+                  <div>
+                    <p className="font-semibold text-foreground">Fax</p>
+                    <p className="text-muted-foreground">604-449-7726</p>
                   </div>
                 </div>
 

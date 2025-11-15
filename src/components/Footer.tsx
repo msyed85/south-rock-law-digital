@@ -29,9 +29,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
-              <li>White Rock, South Surrey</li>
-              <li>British Columbia, Canada</li>
-              <li className="mt-4">(604) XXX-XXXX</li>
+              <li>404-1688 152 St</li>
+              <li>Surrey, BC, V4A 4N2</li>
+              <li className="mt-4">Tel: 604-449-7705</li>
+              <li>Fax: 604-449-7726</li>
               <li>info@southrocklaw.ca</li>
             </ul>
           </div>

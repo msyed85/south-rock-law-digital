@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
 
 const Home = () => {
   return (
@@ -11,7 +10,6 @@ const Home = () => {
       </Helmet>
       <div className="min-h-screen">
         <Hero />
-        <Services />
       </div>
     </>
   );
