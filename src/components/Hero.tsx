@@ -1,18 +1,56 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/south-rock-law-logo.png";
-import heroBackground from "@/assets/hero-background.jpg";
+import { useState, useEffect } from "react";
+
+// Import all White Rock images
+import whiterock1 from "@/assets/whiterock-1.jpg";
+import whiterock2 from "@/assets/whiterock-2.jpg";
+import whiterock3 from "@/assets/whiterock-3.jpg";
+import whiterock4 from "@/assets/whiterock-4.jpg";
+import whiterock5 from "@/assets/whiterock-5.jpg";
+import whiterock6 from "@/assets/whiterock-6.jpg";
+import whiterock7 from "@/assets/whiterock-7.jpg";
+
+const backgroundImages = [
+  whiterock1,
+  whiterock2,
+  whiterock3,
+  whiterock4,
+  whiterock5,
+  whiterock6,
+  whiterock7
+];
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-cover bg-center" style={{
-      backgroundImage: `url(${heroBackground})`
-    }}>
-        <div className="absolute inset-0 bg-primary/80" />
-      </div>
+      {/* Background carousel */}
+      {backgroundImages.map((image, index) => (
+        <div
+          key={index}
+          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          style={{
+            backgroundImage: `url(${image})`,
+            opacity: currentImageIndex === index ? 1 : 0,
+            zIndex: 0
+          }}
+        >
+          <div className="absolute inset-0 bg-primary/75" />
+        </div>
+      ))}
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-8 animate-fade-in">
-          <img src={logo} alt="South Rock Law" className="h-32 md:h-48 mx-auto mb-6 brightness-0 invert drop-shadow-2xl" />
+          <img src={logo} alt="South Rock Law" className="h-32 md:h-48 mx-auto mb-6 drop-shadow-2xl bg-white/90 p-4 rounded-lg" />
           <h1 className="text-6xl md:text-8xl font-bold text-primary-foreground mb-4">
             South Rock Law
           </h1>
