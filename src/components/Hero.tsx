@@ -2,24 +2,17 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/south-rock-law-logo.png";
 import heroBackground from "@/assets/hero-background.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0 bg-cover bg-center" style={{
+      backgroundImage: `url(${heroBackground})`
+    }}>
         <div className="absolute inset-0 bg-primary/80" />
       </div>
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-8 animate-fade-in">
-          <img 
-            src={logo} 
-            alt="South Rock Law" 
-            className="h-32 md:h-48 mx-auto mb-6 brightness-0 invert drop-shadow-2xl"
-          />
+          <img src={logo} alt="South Rock Law" className="h-32 md:h-48 mx-auto mb-6 brightness-0 invert drop-shadow-2xl" />
           <h1 className="text-6xl md:text-8xl font-bold text-primary-foreground mb-4">
             South Rock Law
           </h1>
@@ -35,19 +28,12 @@ const Hero = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Link to="/contact">
-            <Button 
-              size="lg" 
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6"
-            >
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6">
               Schedule Consultation
             </Button>
           </Link>
           <Link to="/services">
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6"
-            >
+            <Button size="lg" variant="outline" className="border-2 border-primary-foreground text-lg px-8 py-6 bg-slate-700 hover:bg-slate-600 text-slate-200 rounded-none">
               Our Practice Areas
             </Button>
           </Link>
@@ -59,8 +45,6 @@ const Hero = () => {
           <p className="text-sm">404-1688 152 St, Surrey, BC, V4A 4N2</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
