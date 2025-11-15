@@ -15,10 +15,10 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <h2 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in">
-          Trusted Legal Counsel
+          Your Trusted Legal Partners
         </h2>
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
-          Serving White Rock and South Surrey with expertise in litigation, corporate law, real estate, and more
+          Serving White Rock and South Surrey with experienced counsel in litigation, corporate law, real estate, and estate planning
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/contact">
