@@ -32,20 +32,20 @@ const Hero = () => {
         </div>)}
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <div className="mb-8 animate-fade-in">
-          <img src={logo} alt="South Rock Law" className="h-64 md:h-80 lg:h-96 mx-auto mb-6 drop-shadow-2xl brightness-0 invert" />
+        <div className="mb-12 animate-fade-in">
+          <img 
+            src={logo} 
+            alt="South Rock Law" 
+            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl brightness-0 invert" 
+            style={{ filter: 'brightness(0) invert(1) drop-shadow(0 4px 0 hsl(42, 85%, 55%))' }}
+          />
         </div>
         
-        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 max-w-3xl mx-auto font-light">
-          Your Trusted Legal Partners            
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto font-light">
+          Your Trusted Legal Partners            
         </p>
         
-        <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          
-
-        </p>
-        
-        <p className="text-base md:text-lg text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-base md:text-lg text-primary-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed">
           At South Rock Law, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Guided by a deep commitment to serving our community, we strive to protect our clients' interests with diligence, and care.
         </p>
         
