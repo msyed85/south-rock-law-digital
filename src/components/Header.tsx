@@ -9,7 +9,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
@@ -20,25 +20,25 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-6">
             <Link 
               to="/" 
-              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
+              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
-              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
+              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
             >
               Services
             </Link>
             <Link 
               to="/about" 
-              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
+              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
             >
               About
             </Link>
             <Link 
               to="/contact" 
-              className={`text-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
+              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
             >
               Contact
             </Link>
@@ -50,39 +50,39 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-foreground">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-primary-foreground">
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4">
+          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 bg-primary/90 backdrop-blur-sm p-4 rounded">
             <Link 
               to="/" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
             >
               Services
             </Link>
             <Link 
               to="/about" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
             >
               About
             </Link>
             <Link 
               to="/contact" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
             >
               Contact
             </Link>
