@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="South Rock Law" className="h-10" />
+            <img src={logo} alt="South Rock Law" className="h-20 bg-primary p-2 rounded" />
           </Link>
 
           {/* Desktop Navigation */}
