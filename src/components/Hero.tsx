@@ -11,42 +11,25 @@ import whiterock4 from "@/assets/whiterock-4.jpg";
 import whiterock5 from "@/assets/whiterock-5.jpg";
 import whiterock6 from "@/assets/whiterock-6.jpg";
 import whiterock7 from "@/assets/whiterock-7.jpg";
-
-const backgroundImages = [
-  whiterock1,
-  whiterock2,
-  whiterock3,
-  whiterock4,
-  whiterock5,
-  whiterock6,
-  whiterock7
-];
+const backgroundImages = [whiterock1, whiterock2, whiterock3, whiterock4, whiterock5, whiterock6, whiterock7];
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
+      setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
     }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
-
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background carousel */}
-      {backgroundImages.map((image, index) => (
-        <div
-          key={index}
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
-          style={{
-            backgroundImage: `url(${image})`,
-            opacity: currentImageIndex === index ? 1 : 0,
-            zIndex: 0
-          }}
-        >
+      {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style={{
+      backgroundImage: `url(${image})`,
+      opacity: currentImageIndex === index ? 1 : 0,
+      zIndex: 0
+    }}>
           <div className="absolute inset-0 bg-primary/75" />
-        </div>
-      ))}
+        </div>)}
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-8 animate-fade-in">
@@ -57,7 +40,7 @@ const Hero = () => {
         </div>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 max-w-3xl mx-auto font-light">
-          Your Trusted Legal Partners in White Rock & South Surrey
+          Your Trusted Legal Partners            
         </p>
         
         <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
