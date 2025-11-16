@@ -43,8 +43,12 @@ const Hero = () => {
           Your Trusted Legal Partners            
         </p>
         
-        <p className="text-lg md:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
           Experienced counsel in litigation, corporate law, real estate, wills & estate planning
+        </p>
+        
+        <p className="text-base md:text-lg text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed">
+          At South Rock Law, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Guided by a deep commitment to serving our community, we strive to protect our clients' interests with diligence, and care.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
