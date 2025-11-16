@@ -50,7 +50,7 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-8 animate-fade-in">
-          <img src={logo} alt="South Rock Law" className="h-32 md:h-48 mx-auto mb-6 drop-shadow-2xl bg-white/90 p-4 rounded-lg" />
+          <img src={logo} alt="South Rock Law" className="h-32 md:h-48 mx-auto mb-6 drop-shadow-2xl" />
           <h1 className="text-6xl md:text-8xl font-bold text-primary-foreground mb-4">
             South Rock Law
           </h1>
