@@ -33,10 +33,7 @@ const Hero = () => {
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-8 animate-fade-in">
-          <img src={logo} alt="South Rock Law" className="h-48 md:h-64 lg:h-72 mx-auto mb-6 drop-shadow-2xl" />
-          <h1 className="text-6xl md:text-8xl font-bold text-primary-foreground mb-4">
-            South Rock Law
-          </h1>
+          <img src={logo} alt="South Rock Law" className="h-64 md:h-80 lg:h-96 mx-auto mb-6 drop-shadow-2xl brightness-0 invert" />
         </div>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-4 max-w-3xl mx-auto font-light">
