@@ -44,7 +44,8 @@ const Hero = () => {
         </p>
         
         <p className="text-lg md:text-xl text-primary-foreground/80 mb-6 max-w-2xl mx-auto">
-          Experienced counsel in litigation, corporate law, real estate, wills & estate planning
+          
+
         </p>
         
         <p className="text-base md:text-lg text-primary-foreground/90 mb-10 max-w-3xl mx-auto leading-relaxed">
