@@ -8,38 +8,37 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
+  const isHomePage = location.pathname === '/';
+  const logoClass = isHomePage ? "h-24 md:h-28 brightness-0 invert" : "h-24 md:h-28";
+  const navLinkClass = (path: string) => {
+    const isActive = location.pathname === path;
+    const baseClass = isHomePage 
+      ? "text-lg text-primary-foreground hover:text-accent transition-colors" 
+      : "text-lg text-primary hover:text-accent transition-colors";
+    return `${baseClass} ${isActive ? 'text-accent font-semibold' : ''}`;
+  };
+  const mobileButtonClass = isHomePage ? "md:hidden text-primary-foreground" : "md:hidden text-primary";
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
+    <header className={`fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-background'} backdrop-blur-sm`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="South Rock Law" className="h-24 md:h-28" />
+            <img src={logo} alt="South Rock Law" className={logoClass} />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link 
-              to="/" 
-              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
-            >
+            <Link to="/" className={navLinkClass('/')}>
               Home
             </Link>
-            <Link 
-              to="/services" 
-              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
-            >
+            <Link to="/services" className={navLinkClass('/services')}>
               Services
             </Link>
-            <Link 
-              to="/about" 
-              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
-            >
+            <Link to="/about" className={navLinkClass('/about')}>
               About
             </Link>
-            <Link 
-              to="/contact" 
-              className={`text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
-            >
+            <Link to="/contact" className={navLinkClass('/contact')}>
               Contact
             </Link>
             <Link to="/contact">
@@ -50,7 +49,7 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden text-primary-foreground">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={mobileButtonClass}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -61,28 +60,28 @@ const Header = () => {
             <Link 
               to="/" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left ${navLinkClass('/')}`}
             >
               Home
             </Link>
             <Link 
               to="/services" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/services' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left ${navLinkClass('/services')}`}
             >
               Services
             </Link>
             <Link 
               to="/about" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/about' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left ${navLinkClass('/about')}`}
             >
               About
             </Link>
             <Link 
               to="/contact" 
               onClick={() => setIsMenuOpen(false)}
-              className={`text-left text-lg text-primary-foreground hover:text-accent transition-colors ${location.pathname === '/contact' ? 'text-accent font-semibold' : ''}`}
+              className={`text-left ${navLinkClass('/contact')}`}
             >
               Contact
             </Link>
