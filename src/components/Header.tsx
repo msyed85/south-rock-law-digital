@@ -3,13 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/south-rock-law-logo.png";
+import logoWhite from "@/assets/south-rock-law-logo-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const isHomePage = location.pathname === '/';
-  const logoClass = isHomePage ? "h-24 md:h-28 brightness-0 invert" : "h-24 md:h-28";
+  const logoSrc = isHomePage ? logoWhite : logo;
+  const logoClass = "h-24 md:h-28";
   const navLinkClass = (path: string) => {
     const isActive = location.pathname === path;
     const baseClass = isHomePage 
@@ -24,7 +26,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="South Rock Law" className={logoClass} />
+            <img src={logoSrc} alt="South Rock Law" className={logoClass} />
           </Link>
 
           {/* Desktop Navigation */}
