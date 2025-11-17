@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/south-rock-law-logo.png";
+import logo from "@/assets/south-rock-law-logo-white.png";
 import { useState, useEffect } from "react";
 
 // Import all White Rock images
@@ -36,8 +36,7 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="South Rock Law" 
-            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl brightness-0 invert" 
-            style={{ filter: 'brightness(0) invert(1) drop-shadow(0 4px 0 hsl(42, 85%, 55%))' }}
+            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl" 
           />
         </div>
         
@@ -62,7 +61,12 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="text-primary-foreground/90 space-y-2">
+        <div className="text-primary-foreground/90 space-y-4">
+          <img 
+            src={logo} 
+            alt="South Rock Law" 
+            className="h-24 md:h-28 mx-auto drop-shadow-xl" 
+          />
           <p className="text-lg font-semibold">Contact Us Today</p>
           <p className="text-base">📞 604-449-7705 | 📧 info@southrocklaw.ca</p>
           <p className="text-sm">404-1688 152 St, Surrey, BC, V4A 4N2</p>
