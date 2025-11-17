@@ -1,8 +1,6 @@
 import logo from "@/assets/south-rock-law-logo.png";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground py-12">
+  return <footer className="bg-primary text-primary-foreground py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
@@ -10,7 +8,8 @@ const Footer = () => {
               <img src={logo} alt="South Rock Law" className="h-12 mb-2 brightness-0 invert" />
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              Trusted legal counsel serving White Rock and South Surrey, British Columbia
+              
+
             </p>
           </div>
 
@@ -42,8 +41,6 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} South Rock Law. All rights reserved.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
