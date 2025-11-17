@@ -11,7 +11,9 @@ import whiterock4 from "@/assets/whiterock-4.jpg";
 import whiterock5 from "@/assets/whiterock-5.jpg";
 import whiterock6 from "@/assets/whiterock-6.jpg";
 import whiterock7 from "@/assets/whiterock-7.jpg";
-const backgroundImages = [whiterock1, whiterock2, whiterock3, whiterock4, whiterock5, whiterock6, whiterock7];
+import whiterock8 from "@/assets/whiterock-8.jpg";
+import whiterock9 from "@/assets/whiterock-9.jpg";
+const backgroundImages = [whiterock1, whiterock2, whiterock3, whiterock4, whiterock5, whiterock6, whiterock7, whiterock8, whiterock9];
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   useEffect(() => {
@@ -32,11 +34,11 @@ const Hero = () => {
         </div>)}
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <div className="mb-12 animate-fade-in">
+        <div className="mb-12 animate-fade-in hover-scale">
           <img 
             src={logo} 
             alt="South Rock Law" 
-            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl" 
+            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
           />
         </div>
         
@@ -61,15 +63,15 @@ const Hero = () => {
           </Link>
         </div>
 
-        <div className="text-primary-foreground/90 space-y-4">
+        <div className="text-primary-foreground/90 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <img 
             src={logo} 
             alt="South Rock Law" 
-            className="h-24 md:h-28 mx-auto drop-shadow-xl" 
+            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
           />
-          <p className="text-lg font-semibold">Contact Us Today</p>
-          <p className="text-base">📞 604-449-7705 | 📧 info@southrocklaw.ca</p>
-          <p className="text-sm">404-1688 152 St, Surrey, BC, V4A 4N2</p>
+          <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>
+          <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@southrocklaw.ca</p>
+          <p className="text-sm animate-fade-in" style={{ animationDelay: '0.9s' }}>404-1688 152 St, Surrey, BC, V4A 4N2</p>
         </div>
       </div>
     </section>;
