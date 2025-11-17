@@ -1,24 +1,20 @@
 import { Shield, Users, Award } from "lucide-react";
 import LawyerProfile from "./LawyerProfile";
-
 const About = () => {
-  return (
-    <>
+  return <>
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law</h2>
             <p className="text-lg text-muted-foreground">
-              Your trusted legal partner in White Rock and South Surrey
+              Your trusted legal partner            
             </p>
           </div>
 
           <div className="prose prose-lg max-w-none mb-12 text-foreground">
             <p className="text-center mb-8">
-              South Rock Law is a full-service law firm dedicated to providing exceptional legal services to individuals 
-              and businesses throughout the White Rock and South Surrey communities of British Columbia. Our team combines 
-              extensive legal expertise with a deep commitment to personalized client service.
+              South Rock Law is a full-service law firm dedicated to providing exceptional legal services to individuals and businesses throughout the Fraser Valley Region of British Columbia. We offer extensive legal expertise with a deep commitment to personalized client service.
             </p>
           </div>
 
@@ -57,8 +53,6 @@ const About = () => {
       </div>
     </section>
     <LawyerProfile />
-    </>
-  );
+    </>;
 };
-
 export default About;
