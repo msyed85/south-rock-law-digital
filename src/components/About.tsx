@@ -1,7 +1,7 @@
 import { Shield, Users, Award } from "lucide-react";
-import LawyerProfile from "./LawyerProfile";
+
 const About = () => {
-  return <>
+  return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
     </section>
-    <LawyerProfile />
-    </>;
+  );
 };
+
 export default About;
