@@ -25,7 +25,7 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-background'} backdrop-blur-sm`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 relative">
+          <Link to="/" className="flex items-center gap-3">
             <img 
               src={logoSrc} 
               alt="South Rock Law" 
@@ -34,7 +34,6 @@ const Header = () => {
               loading="eager"
               className={logoClass} 
             />
-            <span className={`absolute -top-1 -right-2 text-xl font-bold ${isHomePage ? 'text-accent' : 'text-accent'}`}>*</span>
           </Link>
 
           {/* Desktop Navigation */}
