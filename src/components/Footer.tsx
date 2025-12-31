@@ -5,7 +5,14 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <img src={logo} alt="South Rock Law" className="h-24 md:h-28 mb-2 brightness-0 invert" />
+              <img 
+                src={logo} 
+                alt="South Rock Law" 
+                width={168}
+                height={112}
+                loading="lazy"
+                className="h-24 md:h-28 mb-2 brightness-0 invert" 
+              />
             </div>
             <p className="text-primary-foreground/80 text-sm">
               
