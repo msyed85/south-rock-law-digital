@@ -34,7 +34,7 @@ const Hero = () => {
         </div>)}
       
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <div className="mb-12 animate-fade-in hover-scale">
+        <div className="mb-12 animate-fade-in hover-scale relative inline-block">
           <img 
             src={logo} 
             alt="South Rock Law" 
@@ -44,6 +44,7 @@ const Hero = () => {
             fetchPriority="high"
             className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
           />
+          <span className="absolute -top-2 -right-4 text-accent text-4xl md:text-5xl font-bold">*</span>
         </div>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto font-light">
@@ -68,14 +69,18 @@ const Hero = () => {
         </div>
 
         <div className="text-primary-foreground/90 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          <img 
-            src={logo} 
-            alt="South Rock Law" 
-            width={168}
-            height={112}
-            loading="lazy"
-            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
-          />
+          <div className="relative inline-block">
+            <img 
+              src={logo} 
+              alt="South Rock Law" 
+              width={168}
+              height={112}
+              loading="lazy"
+              className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
+            />
+            <span className="absolute -top-1 -right-2 text-accent text-xl font-bold">*</span>
+          </div>
+          <p className="text-sm text-primary-foreground/70">*a Law Corporation</p>
           <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>
           <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@southrocklaw.ca</p>
           <p className="text-sm animate-fade-in" style={{ animationDelay: '0.9s' }}>404-1688 152 St, Surrey, BC, V4A 4N2</p>

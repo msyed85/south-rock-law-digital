@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="mb-4">
+            <div className="mb-4 relative inline-block">
               <img 
                 src={logo} 
                 alt="South Rock Law" 
@@ -13,10 +13,10 @@ const Footer = () => {
                 loading="lazy"
                 className="h-24 md:h-28 mb-2 brightness-0 invert" 
               />
+              <span className="absolute -top-1 -right-2 text-accent text-xl font-bold">*</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
-              
-
+              *a Law Corporation
             </p>
           </div>
 
