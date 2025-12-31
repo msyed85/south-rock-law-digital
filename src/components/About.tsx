@@ -137,19 +137,8 @@ const About = () => {
                       </ul>
                     </div>
 
-                    {/* Community */}
-                    <div className="mb-8">
-                      <div className="flex items-center gap-2 mb-4">
-                        <MapPin size={20} className="text-accent" />
-                        <h4 className="text-lg font-semibold text-primary">Community</h4>
-                      </div>
-                      <p className="text-muted-foreground">
-                        Active member of the White Rock and South Surrey community through volunteer work, civic engagement, and support for local initiatives.
-                      </p>
-                    </div>
-
                     {/* Profile Bio */}
-                    <div>
+                    <div className="mb-8">
                       <h4 className="text-lg font-semibold text-primary mb-4">Profile</h4>
                       <div className="text-muted-foreground space-y-4 leading-relaxed">
                         <p>
@@ -162,6 +151,17 @@ const About = () => {
                           Muhammad's goal is to provide legal services that are not only effective but also grounded in trust and transparency. He values open communication and works closely with clients to navigate the legal process with confidence and clarity.
                         </p>
                       </div>
+                    </div>
+
+                    {/* Community */}
+                    <div>
+                      <div className="flex items-center gap-2 mb-4">
+                        <MapPin size={20} className="text-accent" />
+                        <h4 className="text-lg font-semibold text-primary">Community</h4>
+                      </div>
+                      <p className="text-muted-foreground">
+                        Active member of the White Rock and South Surrey community through volunteer work, civic engagement, and support for local initiatives.
+                      </p>
                     </div>
                   </div>
                 </div>
