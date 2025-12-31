@@ -1,4 +1,4 @@
-import { Shield, Users, Award, Mail, Phone, GraduationCap, Scale, MapPin } from "lucide-react";
+import { Shield, Users, Award, Mail, Phone, GraduationCap, Scale } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
@@ -16,7 +16,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law<sup className="text-accent">*</sup></h2>
             <p className="text-lg text-muted-foreground">
               Your trusted legal partner            
             </p>
@@ -138,7 +138,7 @@ const About = () => {
                     </div>
 
                     {/* Profile Bio */}
-                    <div className="mb-8">
+                    <div>
                       <h4 className="text-lg font-semibold text-primary mb-4">Profile</h4>
                       <div className="text-muted-foreground space-y-4 leading-relaxed">
                         <p>
@@ -148,25 +148,19 @@ const About = () => {
                           Known for his approachable yet professional demeanor, Muhammad believes that law should not only resolve conflicts but also empower individuals and businesses to make informed decisions. His practice reflects a balance of rigor, ethics, and practical insight, whether he is guiding clients through complex civil litigation, corporate transactions, real estate matters, or estate planning.
                         </p>
                         <p>
-                          Muhammad's goal is to provide legal services that are not only effective but also grounded in trust and transparency. He values open communication and works closely with clients to navigate the legal process with confidence and clarity.
+                          Muhammad's goal is to provide legal services that are not only effective but also grounded in trust and transparency. He values open communication and works closely with clients to navigate the legal process with confidence and clarity. He is an active member of the White Rock and South Surrey community through volunteer work, civic engagement, and support for local initiatives.
                         </p>
                       </div>
-                    </div>
-
-                    {/* Community */}
-                    <div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <MapPin size={20} className="text-accent" />
-                        <h4 className="text-lg font-semibold text-primary">Community</h4>
-                      </div>
-                      <p className="text-muted-foreground">
-                        Active member of the White Rock and South Surrey community through volunteer work, civic engagement, and support for local initiatives.
-                      </p>
                     </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
+            
+            {/* Footnote */}
+            <p className="text-sm text-muted-foreground mt-6 text-center">
+              <sup>*</sup> a Law Corporation
+            </p>
           </div>
         </div>
       </div>
