@@ -38,6 +38,10 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="South Rock Law" 
+            width={576}
+            height={384}
+            loading="eager"
+            fetchPriority="high"
             className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
           />
         </div>
@@ -67,6 +71,9 @@ const Hero = () => {
           <img 
             src={logo} 
             alt="South Rock Law" 
+            width={168}
+            height={112}
+            loading="lazy"
             className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
           />
           <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>

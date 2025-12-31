@@ -26,7 +26,14 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoSrc} alt="South Rock Law" className={logoClass} />
+            <img 
+              src={logoSrc} 
+              alt="South Rock Law" 
+              width={168}
+              height={112}
+              loading="eager"
+              className={logoClass} 
+            />
           </Link>
 
           {/* Desktop Navigation */}
