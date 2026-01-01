@@ -12,11 +12,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 bg-background">
+    <article id="about" aria-labelledby="about-heading" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law<sup className="text-accent">*</sup></h2>
+            <h1 id="about-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law<sup className="text-accent">*</sup></h1>
             <p className="text-lg text-muted-foreground">
               Your trusted legal partner            
             </p>
@@ -164,7 +164,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
 };
 

@@ -22,7 +22,7 @@ const Header = () => {
   const mobileButtonClass = isHomePage ? "md:hidden text-primary-foreground" : "md:hidden text-primary";
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-background'} backdrop-blur-sm`}>
+    <header role="banner" className={`fixed top-0 left-0 right-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-background'} backdrop-blur-sm`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
@@ -37,7 +37,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
             <Link to="/" className={navLinkClass('/')}>
               Home
             </Link>
@@ -58,14 +58,20 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className={mobileButtonClass}>
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)} 
+            className={mobileButtonClass}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-4 bg-primary/90 backdrop-blur-sm p-4 rounded">
+          <nav id="mobile-menu" aria-label="Mobile navigation" className="md:hidden mt-4 pb-4 flex flex-col gap-4 bg-primary/90 backdrop-blur-sm p-4 rounded">
             <Link 
               to="/" 
               onClick={() => setIsMenuOpen(false)}

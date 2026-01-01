@@ -34,14 +34,14 @@ const Contact = () => {
       [e.target.name]: e.target.value
     }));
   };
-  return <section id="contact" className="py-24 bg-secondary">
+  return <section id="contact" aria-labelledby="contact-heading" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact Us</h2>
+        <header className="text-center mb-16">
+          <h1 id="contact-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact Us</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Get in touch with our team for a consultation. We're here to help with your legal needs.
           </p>
-        </div>
+        </header>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <div className="space-y-6">
@@ -51,18 +51,22 @@ const Contact = () => {
                 <CardDescription>Fill out the form and we'll get back to you shortly</CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4" aria-label="Contact form">
                   <div>
-                    <Input name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required className="bg-background" />
+                    <label htmlFor="name" className="sr-only">Your Name</label>
+                    <Input id="name" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required className="bg-background" />
                   </div>
                   <div>
-                    <Input name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required className="bg-background" />
+                    <label htmlFor="email" className="sr-only">Email Address</label>
+                    <Input id="email" name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required className="bg-background" />
                   </div>
                   <div>
-                    <Input name="phone" type="tel" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="bg-background" />
+                    <label htmlFor="phone" className="sr-only">Phone Number</label>
+                    <Input id="phone" name="phone" type="tel" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="bg-background" />
                   </div>
                   <div>
-                    <Textarea name="message" placeholder="Tell us about your legal needs" value={formData.message} onChange={handleChange} required className="min-h-32 bg-background" />
+                    <label htmlFor="message" className="sr-only">Message</label>
+                    <Textarea id="message" name="message" placeholder="Tell us about your legal needs" value={formData.message} onChange={handleChange} required className="min-h-32 bg-background" />
                   </div>
                   <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                     Send Message

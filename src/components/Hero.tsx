@@ -23,9 +23,9 @@ const Hero = () => {
 
     return () => clearInterval(interval);
   }, []);
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section aria-label="Welcome to South Rock Law" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background carousel */}
-      {backgroundImages.map((image, index) => <div key={index} className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style={{
+      {backgroundImages.map((image, index) => <div key={index} aria-hidden="true" className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style={{
       backgroundImage: `url(${image})`,
       opacity: currentImageIndex === index ? 1 : 0,
       zIndex: 0
