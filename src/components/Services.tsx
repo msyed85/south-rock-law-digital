@@ -41,7 +41,7 @@ const Services = () => {
         <header className="text-center mb-16">
           <h1 id="services-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Practice Areas</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive legal services tailored to meet the diverse needs of our clients in British Columbia
+            Based in South Surrey & White Rock, we provide comprehensive legal services to clients across British Columbia
           </p>
         </header>
 

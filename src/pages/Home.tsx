@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>South Rock Law | Trusted Legal Services in White Rock & South Surrey, BC</title>
-        <meta name="description" content="South Rock Law offers expert legal services in litigation, corporate law, real estate, wills & estate planning, and notarization in White Rock and South Surrey, British Columbia." />
+        <title>South Rock Law | Your Local Firm in South Surrey & White Rock — Serving All of BC</title>
+        <meta name="description" content="South Rock Law is your local law firm in South Surrey & White Rock, offering expert legal services in litigation, corporate law, real estate, wills & estate planning across British Columbia." />
       </Helmet>
       <div className="min-h-screen">
         <Hero />

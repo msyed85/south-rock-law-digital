@@ -18,13 +18,13 @@ const About = () => {
           <div className="text-center mb-16">
             <h1 id="about-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law<sup className="text-accent">*</sup></h1>
             <p className="text-lg text-muted-foreground">
-              Your trusted legal partner            
+              The Local Firm for South Surrey & White Rock — Serving All of BC
             </p>
           </div>
 
           <div className="prose prose-lg max-w-none mb-12 text-foreground">
             <p className="text-center mb-8">
-              South Rock Law is a full-service law firm dedicated to providing exceptional legal services to individuals and businesses throughout the Fraser Valley Region of British Columbia. We offer extensive legal expertise with a deep commitment to personalized client service.
+              South Rock Law is a full-service law firm based in South Surrey & White Rock, dedicated to providing exceptional legal services to individuals and businesses throughout British Columbia. We combine local expertise with province-wide service, offering personalized attention and trusted counsel to clients across BC.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ const About = () => {
                           Known for his approachable yet professional demeanor, Muhammad believes that law should not only resolve conflicts but also empower individuals and businesses to make informed decisions. His practice reflects a balance of rigor, ethics, and practical insight, whether he is guiding clients through complex civil litigation, corporate transactions, real estate matters, or estate planning.
                         </p>
                         <p>
-                          Muhammad's goal is to provide legal services that are not only effective but also grounded in trust and transparency. He values open communication and works closely with clients to navigate the legal process with confidence and clarity. He is an active member of the White Rock and South Surrey community through volunteer work, civic engagement, and support for local initiatives.
+                          Muhammad's goal is to provide legal services that are not only effective but also grounded in trust and transparency. He values open communication and works closely with clients to navigate the legal process with confidence and clarity. Based in South Surrey & White Rock, he proudly serves clients across British Columbia through volunteer work, civic engagement, and support for community initiatives.
                         </p>
                       </div>
                     </div>

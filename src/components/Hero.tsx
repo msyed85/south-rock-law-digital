@@ -41,17 +41,16 @@ const Hero = () => {
             width={576}
             height={384}
             loading="eager"
-            fetchPriority="high"
             className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
           />
         </div>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto font-light">
-          Your Trusted Legal Partners            
+          The Local Firm for South Surrey & White Rock — Serving All of BC
         </p>
         
         <p className="text-base md:text-lg text-primary-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-          At South Rock Law, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Guided by a deep commitment to serving our community, we strive to protect our clients' interests with diligence, and care.
+          At South Rock Law, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Based in South Surrey & White Rock, we proudly serve clients throughout British Columbia with diligence and care.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

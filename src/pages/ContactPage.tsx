@@ -8,7 +8,7 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Us | South Rock Law - Schedule Your Consultation</title>
-        <meta name="description" content="Contact South Rock Law for expert legal counsel in White Rock and South Surrey. Schedule a consultation for litigation, corporate law, real estate, or estate planning services." />
+        <meta name="description" content="Contact South Rock Law for expert legal counsel. Based in South Surrey & White Rock, we serve clients across British Columbia. Schedule a consultation today." />
       </Helmet>
       <div className="min-h-screen">
         <PageHero 

@@ -130,7 +130,7 @@ const Contact = () => {
             <Card className="bg-ocean text-primary-foreground border-none">
               <CardContent className="pt-6">
                 <p className="text-center text-lg">
-                  "Serving the Fraser Valley Region with dedication and excellence"
+                  "Your local firm in South Surrey & White Rock — proudly serving all of BC"
                 </p>
               </CardContent>
             </Card>
