@@ -8,7 +8,7 @@ const ServicesPage = () => {
     <>
       <Helmet>
         <title>Legal Services | South Rock Law - White Rock & South Surrey</title>
-        <meta name="description" content="Comprehensive legal services including litigation, corporate law, commercial law, wills & estate planning, real estate, and notarization services in White Rock and South Surrey, BC." />
+        <meta name="description" content="Comprehensive legal services including litigation, corporate law, commercial law, wills & estate planning, real estate, and notarization. Based in South Surrey & White Rock, serving all of BC." />
       </Helmet>
       <div className="min-h-screen">
         <PageHero 
