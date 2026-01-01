@@ -36,33 +36,35 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-secondary">
+    <section id="services" aria-labelledby="services-heading" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Practice Areas</h2>
+        <header className="text-center mb-16">
+          <h1 id="services-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">Our Practice Areas</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Comprehensive legal services tailored to meet the diverse needs of our clients in British Columbia
           </p>
-        </div>
+        </header>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card 
+              <article 
                 key={index} 
-                className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card"
+                className="border border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card rounded-lg"
               >
-                <CardHeader>
-                  <div className="w-12 h-12 bg-ocean-light rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="text-ocean" size={24} />
-                  </div>
-                  <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">{service.description}</CardDescription>
-                </CardContent>
-              </Card>
+                <Card className="border-0 bg-transparent shadow-none">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-ocean-light rounded-lg flex items-center justify-center mb-4" aria-hidden="true">
+                      <Icon className="text-ocean" size={24} />
+                    </div>
+                    <CardTitle className="text-xl text-primary">{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className="text-base">{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </article>
             );
           })}
         </div>
