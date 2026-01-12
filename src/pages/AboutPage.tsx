@@ -13,7 +13,7 @@ const AboutPage = () => {
       <div className="min-h-screen">
         <PageHero 
           title="About South Rock Law"
-          subtitle="Trusted legal partners committed to excellence and integrity"
+          subtitle="Your trusted legal counsel committed to excellence and integrity"
           backgroundImage={whiterock8}
         />
         <About />
