@@ -37,9 +37,10 @@ const PrintableBusinessCard = () => {
                 <img 
                   src={logo} 
                   alt="South Rock Law" 
-                  className="h-10 brightness-0 invert"
+                  className="h-14 brightness-0 invert"
                 />
-                <p className="text-[10px] opacity-80 mt-1">*a Law Corporation</p>
+                <div className="w-16 h-0.5 bg-accent mt-1 rounded-full" />
+                <p className="text-[8px] opacity-70 mt-1">*a Law Corporation</p>
               </div>
               
               <div>
