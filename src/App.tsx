@@ -8,6 +8,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import BusinessCard from "./pages/BusinessCard";
+import PrintableBusinessCard from "./pages/PrintableBusinessCard";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -32,8 +33,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          {/* Digital Business Card - standalone without header/footer */}
+{/* Digital Business Card - standalone without header/footer */}
           <Route path="/card" element={<BusinessCard />} />
+          <Route path="/card/print" element={<PrintableBusinessCard />} />
           
           {/* Main website pages with layout */}
           <Route path="/" element={<MainLayout><Home /></MainLayout>} />
