@@ -1,14 +1,7 @@
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, Printer } from "lucide-react";
 import logo from "@/assets/south-rock-law-logo.png";
 
 const PrintableBusinessCard = () => {
-  const practiceAreas = [
-    "Civil Litigation",
-    "Corporate & Commercial Law", 
-    "Real Estate Law",
-    "Wills & Estate Planning",
-    "Notarization Services"
-  ];
 
   const handlePrint = () => {
     window.print();
@@ -32,50 +25,49 @@ const PrintableBusinessCard = () => {
           <div className="flex flex-col lg:flex-row gap-8 print:gap-4 print:flex-row print:justify-center">
             
             {/* Front of card */}
-            <div className="w-[3.5in] h-[2in] bg-gradient-to-br from-primary to-primary/90 rounded-lg shadow-xl print:shadow-none print:rounded-none flex flex-col justify-between p-6 text-primary-foreground">
-              <div>
+            <div className="w-[3.5in] h-[2in] bg-gradient-to-br from-primary to-primary/90 rounded-lg shadow-xl print:shadow-none print:rounded-none flex flex-col justify-between p-5 text-primary-foreground">
+              <div className="flex-1 flex items-center justify-center">
                 <img 
                   src={logo} 
                   alt="South Rock Law" 
-                  className="h-14 brightness-0 invert"
+                  className="w-[60%] h-auto object-contain"
                 />
-                <div className="w-16 h-0.5 bg-accent mt-1 rounded-full" />
-                <p className="text-[8px] opacity-70 mt-1">*a Law Corporation</p>
               </div>
               
-              <div>
-                <h1 className="text-xl font-bold">Muhammad Syed</h1>
-                <p className="text-sm opacity-90">Barrister and Solicitor</p>
+              <div className="flex justify-between items-end">
+                <div>
+                  <h1 className="text-lg font-bold">Muhammad Syed</h1>
+                  <p className="text-xs opacity-90">Barrister and Solicitor</p>
+                </div>
+                <p className="text-[6px] opacity-60">*a Law Corporation</p>
               </div>
             </div>
 
             {/* Back of card */}
-            <div className="w-[3.5in] h-[2in] bg-card border border-border rounded-lg shadow-xl print:shadow-none print:rounded-none print:border-primary/20 p-4 flex flex-col justify-between">
-              <div className="space-y-1.5">
+            <div className="w-[3.5in] h-[2in] bg-card border border-border rounded-lg shadow-xl print:shadow-none print:rounded-none print:border-primary/20 p-5 flex flex-col justify-center">
+              <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <Phone size={12} className="text-accent shrink-0" />
-                  <span className="text-xs text-foreground">604-449-7705</span>
+                  <Phone size={14} className="text-accent shrink-0" />
+                  <span className="text-sm text-foreground">604-449-7705</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={12} className="text-accent shrink-0" />
-                  <span className="text-xs text-foreground">info@southrocklaw.ca</span>
+                  <Printer size={14} className="text-accent shrink-0" />
+                  <span className="text-sm text-foreground">604-449-7726</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Globe size={12} className="text-accent shrink-0" />
-                  <span className="text-xs text-foreground">www.southrocklaw.ca</span>
+                  <Mail size={14} className="text-accent shrink-0" />
+                  <span className="text-sm text-foreground">info@southrocklaw.ca</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Globe size={14} className="text-accent shrink-0" />
+                  <span className="text-sm text-foreground">www.southrocklaw.ca</span>
                 </div>
                 <div className="flex items-start gap-2">
-                  <MapPin size={12} className="text-accent shrink-0 mt-0.5" />
-                  <span className="text-xs text-foreground leading-tight">
+                  <MapPin size={14} className="text-accent shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground leading-tight">
                     404-1688 152 St, Surrey, BC V4A 4N2
                   </span>
                 </div>
-              </div>
-
-              <div className="border-t border-border pt-2">
-                <p className="text-[9px] text-muted-foreground text-center leading-snug">
-                  {practiceAreas.join(" • ")}
-                </p>
               </div>
             </div>
           </div>
