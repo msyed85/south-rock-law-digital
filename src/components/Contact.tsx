@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useState } from "react";
+import AnimatedSection from "./AnimatedSection";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,127 +16,125 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     const subject = encodeURIComponent(`Contact from ${formData.name}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'Not provided'}\n\nMessage:\n${formData.message}`
     );
-    
     window.location.href = `mailto:info@southrocklaw.ca?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  return <section id="contact" aria-labelledby="contact-heading" className="py-24 bg-secondary">
+
+  return (
+    <section id="contact" aria-labelledby="contact-heading" className="py-24 bg-secondary">
       <div className="container mx-auto px-4">
-        <header className="text-center mb-16">
-          <h1 id="contact-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact Us</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get in touch with our team for a consultation. We're here to help with your legal needs.
-          </p>
-        </header>
+        <AnimatedSection>
+          <header className="text-center mb-16">
+            <h1 id="contact-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact Us</h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Get in touch with our team for a consultation. We're here to help with your legal needs.
+            </p>
+          </header>
+        </AnimatedSection>
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          <div className="space-y-6">
-            <Card className="bg-card border-border">
-              <CardHeader>
-                <CardTitle className="text-primary">Get In Touch</CardTitle>
-                <CardDescription>Fill out the form and we'll get back to you shortly</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4" aria-label="Contact form">
-                  <div>
-                    <label htmlFor="name" className="sr-only">Your Name</label>
-                    <Input id="name" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required className="bg-background" />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="sr-only">Email Address</label>
-                    <Input id="email" name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required className="bg-background" />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="sr-only">Phone Number</label>
-                    <Input id="phone" name="phone" type="tel" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="bg-background" />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="sr-only">Message</label>
-                    <Textarea id="message" name="message" placeholder="Tell us about your legal needs" value={formData.message} onChange={handleChange} required className="min-h-32 bg-background" />
-                  </div>
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-                  >
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+          <AnimatedSection direction="left">
+            <div className="space-y-6">
+              <Card className="bg-card border-border">
+                <CardHeader>
+                  <CardTitle className="text-primary">Get In Touch</CardTitle>
+                  <CardDescription>Fill out the form and we'll get back to you shortly</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleSubmit} className="space-y-4" aria-label="Contact form">
+                    <div>
+                      <label htmlFor="name" className="sr-only">Your Name</label>
+                      <Input id="name" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required className="bg-background" />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="sr-only">Email Address</label>
+                      <Input id="email" name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required className="bg-background" />
+                    </div>
+                    <div>
+                      <label htmlFor="phone" className="sr-only">Phone Number</label>
+                      <Input id="phone" name="phone" type="tel" placeholder="Phone Number" value={formData.phone} onChange={handleChange} className="bg-background" />
+                    </div>
+                    <div>
+                      <label htmlFor="message" className="sr-only">Message</label>
+                      <Textarea id="message" name="message" placeholder="Tell us about your legal needs" value={formData.message} onChange={handleChange} required className="min-h-32 bg-background" />
+                    </div>
+                    <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                      Send Message
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
+          </AnimatedSection>
 
-          <div className="space-y-6">
-            <Card className="bg-card border-border">
-              <CardHeader>
-                <CardTitle className="text-primary">Office Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <MapPin className="text-ocean mt-1 flex-shrink-0" size={20} />
-                  <div>
-                    <p className="font-semibold text-foreground">Address</p>
-                    <p className="text-muted-foreground">404-1688 152 St<br />Surrey, BC, V4A 4N2</p>
+          <AnimatedSection direction="right">
+            <div className="space-y-6">
+              <Card className="bg-card border-border">
+                <CardHeader>
+                  <CardTitle className="text-primary">Office Information</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="text-ocean mt-1 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold text-foreground">Address</p>
+                      <p className="text-muted-foreground">404-1688 152 St<br />Surrey, BC, V4A 4N2</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
-                  <div>
-                    <p className="font-semibold text-foreground">Telephone</p>
-                    <p className="text-muted-foreground">604-449-7705</p>
+                  <div className="flex items-start gap-3">
+                    <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold text-foreground">Telephone</p>
+                      <p className="text-muted-foreground">604-449-7705</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
-                  <div>
-                    <p className="font-semibold text-foreground">Fax</p>
-                    <p className="text-muted-foreground">604-449-7726</p>
+                  <div className="flex items-start gap-3">
+                    <Phone className="text-ocean mt-1 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold text-foreground">Fax</p>
+                      <p className="text-muted-foreground">604-449-7726</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Mail className="text-ocean mt-1 flex-shrink-0" size={20} />
-                  <div>
-                    <p className="font-semibold text-foreground">Email</p>
-                    <p className="text-muted-foreground">info@southrocklaw.ca</p>
+                  <div className="flex items-start gap-3">
+                    <Mail className="text-ocean mt-1 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold text-foreground">Email</p>
+                      <p className="text-muted-foreground">info@southrocklaw.ca</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Clock className="text-ocean mt-1 flex-shrink-0" size={20} />
-                  <div>
-                    <p className="font-semibold text-foreground">Business Hours</p>
-                    <p className="text-muted-foreground">
-                      Monday - Friday: 9:00 AM - 5:00 PM<br />
-                      Saturday - Sunday: Closed
-                    </p>
+                  <div className="flex items-start gap-3">
+                    <Clock className="text-ocean mt-1 flex-shrink-0" size={20} />
+                    <div>
+                      <p className="font-semibold text-foreground">Business Hours</p>
+                      <p className="text-muted-foreground">
+                        Monday - Friday: 9:00 AM - 5:00 PM<br />
+                        Saturday - Sunday: Closed
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
 
-            <Card className="bg-ocean text-primary-foreground border-none">
-              <CardContent className="pt-6">
-                <p className="text-center text-lg">
-                  "Your local firm in South Surrey & White Rock — proudly serving all of BC"
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+              <Card className="bg-ocean text-primary-foreground border-none">
+                <CardContent className="pt-6">
+                  <p className="text-center text-lg">
+                    "Your local firm in South Surrey & White Rock — proudly serving all of BC"
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </AnimatedSection>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

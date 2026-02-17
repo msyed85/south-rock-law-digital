@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       </Helmet>
       <div className="min-h-screen">
         <Hero />
+        <Testimonials />
       </div>
     </>
   );
