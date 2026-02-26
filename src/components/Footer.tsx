@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <img
               src={logo}
-              alt="South Rock Law"
+              alt="M. Syed Law Corporation"
               width={168}
               height={112}
               loading="lazy"
@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-accent shrink-0" />
-                <a href="mailto:info@southrocklaw.ca" className="hover:text-accent transition-colors">info@southrocklaw.ca</a>
+                <a href="mailto:info@mslc.ca" className="hover:text-accent transition-colors">info@mslc.ca</a>
               </li>
             </ul>
 
@@ -74,7 +74,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4 text-lg">Our Office</h4>
             <div className="rounded-lg overflow-hidden border border-primary-foreground/20">
               <iframe
-                title="South Rock Law Office Location"
+                title="M. Syed Law Corporation Office Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.8!2d-122.8012!3d49.0452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485dc0323!2s404-1688+152+St%2C+Surrey%2C+BC+V4A+4N2!5e0!3m2!1sen!2sca!4v1700000000000"
                 width="100%"
                 height="180"
@@ -91,7 +91,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-primary-foreground/20">
         <div className="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/70 gap-4">
-          <p>&copy; {new Date().getFullYear()} South Rock Law. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} M. Syed Law Corporation. All rights reserved.</p>
           <nav className="flex gap-6">
             <Link to="/services" className="hover:text-accent transition-colors">Services</Link>
             <Link to="/about" className="hover:text-accent transition-colors">About</Link>

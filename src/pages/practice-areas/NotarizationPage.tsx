@@ -14,8 +14,8 @@ const faqs = [
 const NotarizationPage = () => (
   <>
     <Helmet>
-      <title>Notarization Services | South Rock Law — Surrey & White Rock</title>
-      <meta name="description" content="Professional notarization services in South Surrey & White Rock. Affidavits, statutory declarations, certified copies, and more. South Rock Law serves all of BC." />
+      <title>Notarization Services | M. Syed Law Corporation — Surrey & White Rock</title>
+      <meta name="description" content="Professional notarization services in South Surrey & White Rock. Affidavits, statutory declarations, certified copies, and more. M. Syed Law Corporation serves all of BC." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
@@ -27,7 +27,7 @@ const NotarizationPage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>South Rock Law provides professional notarization services for individuals and businesses throughout British Columbia. Our notarization services ensure your documents meet legal requirements and are properly authenticated.</p>
+              <p>M. Syed Law Corporation provides professional notarization services for individuals and businesses throughout British Columbia. Our notarization services ensure your documents meet legal requirements and are properly authenticated.</p>
               <p>Whether you need an affidavit commissioned, a statutory declaration witnessed, or certified true copies prepared, we offer efficient and reliable notarization services.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Services Include</h2>
               <ul className="space-y-2 text-muted-foreground">

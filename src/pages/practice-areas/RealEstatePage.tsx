@@ -14,8 +14,8 @@ const faqs = [
 const RealEstatePage = () => (
   <>
     <Helmet>
-      <title>Real Estate Lawyer | South Rock Law — Surrey & White Rock</title>
-      <meta name="description" content="Real estate law services in South Surrey & White Rock. Purchase, sale, and mortgage transactions handled with care by South Rock Law. Serving all of BC." />
+      <title>Real Estate Lawyer | M. Syed Law Corporation — Surrey & White Rock</title>
+      <meta name="description" content="Real estate law services in South Surrey & White Rock. Purchase, sale, and mortgage transactions handled with care by M. Syed Law Corporation. Serving all of BC." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
@@ -27,7 +27,7 @@ const RealEstatePage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>Real estate transactions are among the most significant financial decisions you'll make. South Rock Law provides comprehensive real estate legal services to ensure your property matters are handled with precision and care.</p>
+              <p>Real estate transactions are among the most significant financial decisions you'll make. M. Syed Law Corporation provides comprehensive real estate legal services to ensure your property matters are handled with precision and care.</p>
               <p>From reviewing contracts of purchase and sale to managing closings and title transfers, we guide you through every step of the process with clarity and attention to detail.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Services Include</h2>
               <ul className="space-y-2 text-muted-foreground">

@@ -10,13 +10,13 @@ const BusinessCard = () => {
 VERSION:3.0
 N:Syed;Muhammad;;;
 FN:Muhammad Syed
-ORG:South Rock Law
+ORG:M. Syed Law Corporation
 TITLE:Barrister and Solicitor
 TEL;TYPE=WORK,VOICE:+1-604-449-7705
 TEL;TYPE=WORK,FAX:+1-604-449-7726
-EMAIL;TYPE=WORK:info@southrocklaw.ca
+EMAIL;TYPE=WORK:info@mslc.ca
 ADR;TYPE=WORK:;;404-1688 152 St;Surrey;BC;V4A 4N2;Canada
-URL:https://www.southrocklaw.ca
+URL:https://www.mslc.ca
 NOTE:Civil Litigation | Corporate & Commercial Law | Real Estate Law | Wills & Estate Planning | Notarization Services
 END:VCARD`;
 
@@ -24,7 +24,7 @@ END:VCARD`;
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "muhammad-syed-south-rock-law.vcf";
+    link.download = "muhammad-syed-mslc.vcf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -46,7 +46,7 @@ END:VCARD`;
         <div className="bg-gradient-to-r from-primary to-primary/80 p-6 text-center">
           <img 
             src={logo} 
-            alt="South Rock Law" 
+            alt="M. Syed Law Corporation" 
             className="h-16 mx-auto mb-4 brightness-0 invert"
           />
           <p className="text-primary-foreground/80 text-xs tracking-wider uppercase">
@@ -71,10 +71,7 @@ END:VCARD`;
 
           {/* Contact Information */}
           <div className="space-y-3 mb-6">
-            <a 
-              href="tel:604-449-7705" 
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-            >
+            <a href="tel:604-449-7705" className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                 <Phone size={18} className="text-accent" />
               </div>
@@ -84,25 +81,17 @@ END:VCARD`;
               </div>
             </a>
 
-            <a 
-              href="mailto:info@southrocklaw.ca" 
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-            >
+            <a href="mailto:info@mslc.ca" className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                 <Mail size={18} className="text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wide">Email</p>
-                <p className="text-foreground font-medium">info@southrocklaw.ca</p>
+                <p className="text-foreground font-medium">info@mslc.ca</p>
               </div>
             </a>
 
-            <a 
-              href="https://maps.google.com/?q=404-1688+152+St,+Surrey,+BC+V4A+4N2" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-            >
+            <a href="https://maps.google.com/?q=404-1688+152+St,+Surrey,+BC+V4A+4N2" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                 <MapPin size={18} className="text-accent" />
               </div>
@@ -112,18 +101,13 @@ END:VCARD`;
               </div>
             </a>
 
-            <a 
-              href="https://www.southrocklaw.ca" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
-            >
+            <a href="https://www.mslc.ca" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors">
               <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
                 <Globe size={18} className="text-accent" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wide">Website</p>
-                <p className="text-foreground font-medium">www.southrocklaw.ca</p>
+                <p className="text-foreground font-medium">www.mslc.ca</p>
               </div>
             </a>
           </div>
@@ -133,10 +117,7 @@ END:VCARD`;
             <p className="text-xs text-muted-foreground uppercase tracking-wide mb-3 text-center">Practice Areas</p>
             <div className="flex flex-wrap gap-2 justify-center">
               {practiceAreas.map((area) => (
-                <span 
-                  key={area} 
-                  className="px-3 py-1 bg-primary/5 text-primary rounded-full text-xs font-medium border border-primary/10"
-                >
+                <span key={area} className="px-3 py-1 bg-primary/5 text-primary rounded-full text-xs font-medium border border-primary/10">
                   {area}
                 </span>
               ))}
@@ -144,11 +125,7 @@ END:VCARD`;
           </div>
 
           {/* Save Contact Button */}
-          <Button 
-            onClick={handleDownloadVCard}
-            className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
-            size="lg"
-          >
+          <Button onClick={handleDownloadVCard} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" size="lg">
             <Download size={18} className="mr-2" />
             Save Contact
           </Button>

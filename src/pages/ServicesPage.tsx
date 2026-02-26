@@ -7,7 +7,7 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Legal Services | South Rock Law - White Rock & South Surrey</title>
+        <title>Legal Services | M. Syed Law Corporation - White Rock & South Surrey</title>
         <meta name="description" content="Comprehensive legal services including litigation, corporate law, commercial law, wills & estate planning, real estate, and notarization. Based in South Surrey & White Rock, serving all of BC." />
       </Helmet>
       <div className="min-h-screen">

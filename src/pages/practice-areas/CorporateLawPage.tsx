@@ -14,8 +14,8 @@ const faqs = [
 const CorporateLawPage = () => (
   <>
     <Helmet>
-      <title>Corporate Lawyer | South Rock Law — Surrey & White Rock</title>
-      <meta name="description" content="Corporate law services in South Surrey & White Rock. South Rock Law helps businesses with incorporation, governance, agreements, and transactions across BC." />
+      <title>Corporate Lawyer | M. Syed Law Corporation — Surrey & White Rock</title>
+      <meta name="description" content="Corporate law services in South Surrey & White Rock. M. Syed Law Corporation helps businesses with incorporation, governance, agreements, and transactions across BC." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
         mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
@@ -27,7 +27,7 @@ const CorporateLawPage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>Whether you're launching a startup or managing an established enterprise, sound corporate legal counsel is essential. South Rock Law provides comprehensive corporate law services designed to protect your business interests and support growth.</p>
+              <p>Whether you're launching a startup or managing an established enterprise, sound corporate legal counsel is essential. M. Syed Law Corporation provides comprehensive corporate law services designed to protect your business interests and support growth.</p>
               <p>We work closely with business owners, directors, and stakeholders to structure transactions, draft agreements, and navigate the complexities of corporate governance with clarity and confidence.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Services Include</h2>
               <ul className="space-y-2 text-muted-foreground">

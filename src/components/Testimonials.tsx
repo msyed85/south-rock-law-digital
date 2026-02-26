@@ -4,7 +4,7 @@ import AnimatedSection from "./AnimatedSection";
 
 const testimonials = [
   {
-    quote: "South Rock Law handled our real estate transaction with exceptional professionalism. Muhammad was thorough, responsive, and made the entire process seamless.",
+    quote: "M. Syed Law Corporation handled our real estate transaction with exceptional professionalism. Muhammad was thorough, responsive, and made the entire process seamless.",
     author: "Client",
     context: "Real Estate Transaction",
   },
@@ -14,7 +14,7 @@ const testimonials = [
     context: "Civil Litigation",
   },
   {
-    quote: "Setting up our corporate structure felt overwhelming, but South Rock Law simplified everything and provided clear, practical advice every step of the way.",
+    quote: "Setting up our corporate structure felt overwhelming, but M. Syed Law Corporation simplified everything and provided clear, practical advice every step of the way.",
     author: "Client",
     context: "Corporate & Commercial Law",
   },

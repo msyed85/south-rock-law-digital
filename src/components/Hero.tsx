@@ -19,11 +19,11 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex(prevIndex => (prevIndex + 1) % backgroundImages.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
-  return <section aria-label="Welcome to South Rock Law" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section aria-label="Welcome to M. Syed Law Corporation" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background carousel */}
       {backgroundImages.map((image, index) => <div key={index} aria-hidden="true" className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000" style={{
       backgroundImage: `url(${image})`,
@@ -37,7 +37,7 @@ const Hero = () => {
         <div className="mb-12 animate-fade-in hover-scale">
           <img 
             src={logo} 
-            alt="South Rock Law" 
+            alt="M. Syed Law Corporation" 
             width={576}
             height={384}
             loading="eager"
@@ -50,7 +50,7 @@ const Hero = () => {
         </p>
         
         <p className="text-base md:text-lg text-primary-foreground/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-          At South Rock Law, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Based in South Surrey & White Rock, we proudly serve clients throughout British Columbia with diligence and care.
+          At M. Syed Law Corporation, we uphold the highest standards of integrity and professionalism in every aspect of our practice. With expertise in wills and estates, civil litigation, corporate and commercial law, and real estate, we offer strategic counsel rooted in experience and trust. Based in South Surrey & White Rock, we proudly serve clients throughout British Columbia with diligence and care.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -69,14 +69,14 @@ const Hero = () => {
         <div className="text-primary-foreground/90 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <img 
             src={logo} 
-            alt="South Rock Law" 
+            alt="M. Syed Law Corporation" 
             width={168}
             height={112}
             loading="lazy"
             className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
           />
           <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>
-          <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@southrocklaw.ca</p>
+          <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@mslc.ca</p>
           <p className="text-sm animate-fade-in" style={{ animationDelay: '0.9s' }}>404-1688 152 St, Surrey, BC, V4A 4N2</p>
         </div>
       </div>
