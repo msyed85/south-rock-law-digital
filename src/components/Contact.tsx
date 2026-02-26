@@ -20,7 +20,7 @@ const Contact = () => {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'Not provided'}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:info@southrocklaw.ca?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@mslc.ca?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -106,7 +106,7 @@ const Contact = () => {
                     <Mail className="text-ocean mt-1 flex-shrink-0" size={20} />
                     <div>
                       <p className="font-semibold text-foreground">Email</p>
-                      <p className="text-muted-foreground">info@southrocklaw.ca</p>
+                      <p className="text-muted-foreground">info@mslc.ca</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">

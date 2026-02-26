@@ -14,7 +14,7 @@ const faqs = [
 const WillsEstatePage = () => (
   <>
     <Helmet>
-      <title>Wills & Estate Planning Lawyer | South Rock Law — Surrey & White Rock</title>
+      <title>Wills & Estate Planning Lawyer | M. Syed Law Corporation — Surrey & White Rock</title>
       <meta name="description" content="Wills and estate planning services in South Surrey & White Rock. Protect your legacy with personalized will drafting, powers of attorney, and estate administration." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
@@ -27,7 +27,7 @@ const WillsEstatePage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>Planning for the future is one of the most important steps you can take to protect your loved ones. South Rock Law provides compassionate and thorough estate planning services to ensure your wishes are clearly documented and legally enforceable.</p>
+              <p>Planning for the future is one of the most important steps you can take to protect your loved ones. M. Syed Law Corporation provides compassionate and thorough estate planning services to ensure your wishes are clearly documented and legally enforceable.</p>
               <p>We guide you through every aspect of estate planning, from drafting wills and powers of attorney to advising on estate administration and probate matters.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Services Include</h2>
               <ul className="space-y-2 text-muted-foreground">

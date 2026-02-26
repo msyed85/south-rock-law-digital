@@ -17,7 +17,7 @@ const LawyerProfile = () => {
                   <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
                     <div className="text-center">
                       <div className="w-32 h-32 bg-primary/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <span className="text-4xl font-bold text-primary">SR</span>
+                        <span className="text-4xl font-bold text-primary">MS</span>
                       </div>
                       <p className="text-sm text-muted-foreground">Photo Coming Soon</p>
                     </div>
@@ -26,12 +26,8 @@ const LawyerProfile = () => {
                 
                 <div className="md:col-span-2 space-y-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-primary mb-1">
-                      [Attorney Name]
-                    </h3>
-                    <p className="text-lg text-muted-foreground mb-4">
-                      Founding Partner
-                    </p>
+                    <h3 className="text-2xl font-bold text-primary mb-1">Muhammad Syed</h3>
+                    <p className="text-lg text-muted-foreground mb-4">Founding Partner</p>
                   </div>
                   
                   <div className="space-y-3">
@@ -39,9 +35,7 @@ const LawyerProfile = () => {
                       <Mail className="text-primary mt-1 flex-shrink-0" size={20} />
                       <div>
                         <p className="font-semibold text-sm text-muted-foreground">Email</p>
-                        <a href="mailto:info@southrocklaw.ca" className="text-primary hover:underline">
-                          info@southrocklaw.ca
-                        </a>
+                        <a href="mailto:info@mslc.ca" className="text-primary hover:underline">info@mslc.ca</a>
                       </div>
                     </div>
                     
@@ -49,9 +43,7 @@ const LawyerProfile = () => {
                       <Phone className="text-primary mt-1 flex-shrink-0" size={20} />
                       <div>
                         <p className="font-semibold text-sm text-muted-foreground">Phone</p>
-                        <a href="tel:604-449-7705" className="text-primary hover:underline">
-                          604-449-7705
-                        </a>
+                        <a href="tel:604-449-7705" className="text-primary hover:underline">604-449-7705</a>
                       </div>
                     </div>
                   </div>
@@ -70,8 +62,8 @@ const LawyerProfile = () => {
                   <div className="pt-4 border-t">
                     <h4 className="font-semibold text-primary mb-3">Education & Bar Admission</h4>
                     <p className="text-muted-foreground">
-                      [Law School Name]<br />
-                      Called to the Bar: [Year]<br />
+                      Master of Law (LL.M.), University of Sydney<br />
+                      Called to the Bar: 2023<br />
                       Law Society of British Columbia
                     </p>
                   </div>

@@ -28,7 +28,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <img 
               src={logoSrc} 
-              alt="South Rock Law" 
+              alt="M. Syed Law Corporation" 
               width={168}
               height={112}
               loading="eager"
@@ -38,22 +38,12 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
-            <Link to="/" className={navLinkClass('/')}>
-              Home
-            </Link>
-            <Link to="/services" className={navLinkClass('/services')}>
-              Services
-            </Link>
-            <Link to="/about" className={navLinkClass('/about')}>
-              About
-            </Link>
-            <Link to="/contact" className={navLinkClass('/contact')}>
-              Contact
-            </Link>
+            <Link to="/" className={navLinkClass('/')}>Home</Link>
+            <Link to="/services" className={navLinkClass('/services')}>Services</Link>
+            <Link to="/about" className={navLinkClass('/about')}>About</Link>
+            <Link to="/contact" className={navLinkClass('/contact')}>Contact</Link>
             <Link to="/contact">
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
-                Get In Touch
-              </Button>
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">Get In Touch</Button>
             </Link>
           </nav>
 
@@ -72,38 +62,12 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav id="mobile-menu" aria-label="Mobile navigation" className="md:hidden mt-4 pb-4 flex flex-col gap-4 bg-primary/90 backdrop-blur-sm p-4 rounded">
-            <Link 
-              to="/" 
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-left ${navLinkClass('/')}`}
-            >
-              Home
-            </Link>
-            <Link 
-              to="/services" 
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-left ${navLinkClass('/services')}`}
-            >
-              Services
-            </Link>
-            <Link 
-              to="/about" 
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-left ${navLinkClass('/about')}`}
-            >
-              About
-            </Link>
-            <Link 
-              to="/contact" 
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-left ${navLinkClass('/contact')}`}
-            >
-              Contact
-            </Link>
+            <Link to="/" onClick={() => setIsMenuOpen(false)} className={`text-left ${navLinkClass('/')}`}>Home</Link>
+            <Link to="/services" onClick={() => setIsMenuOpen(false)} className={`text-left ${navLinkClass('/services')}`}>Services</Link>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)} className={`text-left ${navLinkClass('/about')}`}>About</Link>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)} className={`text-left ${navLinkClass('/contact')}`}>Contact</Link>
             <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">
-                Get In Touch
-              </Button>
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 w-full">Get In Touch</Button>
             </Link>
           </nav>
         )}

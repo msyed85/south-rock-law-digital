@@ -14,7 +14,7 @@ const faqs = [
 const CommercialLawPage = () => (
   <>
     <Helmet>
-      <title>Commercial Lawyer | South Rock Law — Surrey & White Rock</title>
+      <title>Commercial Lawyer | M. Syed Law Corporation — Surrey & White Rock</title>
       <meta name="description" content="Commercial law services in South Surrey & White Rock. Contract drafting, negotiations, and business operations guidance for BC businesses." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org", "@type": "FAQPage",
@@ -27,7 +27,7 @@ const CommercialLawPage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>Effective commercial legal support is the backbone of successful business operations. At South Rock Law, we help businesses navigate the legal complexities of commercial transactions, contractual relationships, and regulatory requirements.</p>
+              <p>Effective commercial legal support is the backbone of successful business operations. At M. Syed Law Corporation, we help businesses navigate the legal complexities of commercial transactions, contractual relationships, and regulatory requirements.</p>
               <p>From drafting precise contracts to resolving commercial disputes, our goal is to minimize risk and maximize your business potential with clear, practical legal advice.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Services Include</h2>
               <ul className="space-y-2 text-muted-foreground">

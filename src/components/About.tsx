@@ -18,7 +18,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <h1 id="about-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">About South Rock Law<sup className="text-accent">*</sup></h1>
+              <h1 id="about-heading" className="text-4xl md:text-5xl font-bold text-primary mb-4">About M. Syed Law Corporation<sup className="text-accent">*</sup></h1>
               <p className="text-lg text-muted-foreground">
                 The Local Firm for South Surrey & White Rock — Serving All of BC
               </p>
@@ -28,7 +28,7 @@ const About = () => {
           <AnimatedSection delay={0.1}>
             <div className="prose prose-lg max-w-none mb-12 text-foreground">
               <p className="text-center mb-8">
-                South Rock Law is a full-service law firm based in South Surrey & White Rock, dedicated to providing exceptional legal services to individuals and businesses throughout British Columbia. We combine local expertise with province-wide service, offering personalized attention and trusted counsel to clients across BC.
+                M. Syed Law Corporation is a full-service law firm based in South Surrey & White Rock, dedicated to providing exceptional legal services to individuals and businesses throughout British Columbia. We combine local expertise with province-wide service, offering personalized attention and trusted counsel to clients across BC.
               </p>
             </div>
           </AnimatedSection>
@@ -77,11 +77,11 @@ const About = () => {
                       {/* Contact Info */}
                       <div className="mt-6 space-y-3 w-full">
                         <a 
-                          href="mailto:info@southrocklaw.ca" 
+                          href="mailto:info@mslc.ca" 
                           className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors justify-center"
                         >
                           <Mail size={18} className="text-accent" />
-                          <span className="text-sm">info@southrocklaw.ca</span>
+                          <span className="text-sm">info@mslc.ca</span>
                         </a>
                         <a 
                           href="tel:604-449-7705" 

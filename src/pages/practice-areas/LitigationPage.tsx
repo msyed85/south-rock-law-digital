@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import whiterock3 from "@/assets/whiterock-3.jpg";
 
 const faqs = [
-  { q: "What types of litigation does South Rock Law handle?", a: "We handle a wide range of civil disputes including breach of contract, property disputes, employment matters, debt recovery, and other civil claims throughout British Columbia." },
+  { q: "What types of litigation does M. Syed Law Corporation handle?", a: "We handle a wide range of civil disputes including breach of contract, property disputes, employment matters, debt recovery, and other civil claims throughout British Columbia." },
   { q: "How long does a typical litigation case take?", a: "Timelines vary significantly depending on complexity. Simple matters may resolve in weeks through negotiation, while complex cases proceeding to trial can take a year or more. We always pursue efficient resolution strategies." },
   { q: "What should I bring to my initial litigation consultation?", a: "Bring any relevant documents such as contracts, correspondence, court filings, and a timeline of events. This helps us assess your case quickly and provide informed advice." },
 ];
@@ -14,8 +14,8 @@ const faqs = [
 const LitigationPage = () => (
   <>
     <Helmet>
-      <title>Civil Litigation Lawyer | South Rock Law — Surrey & White Rock</title>
-      <meta name="description" content="Experienced civil litigation lawyer in South Surrey & White Rock. South Rock Law provides strategic representation in disputes, trials, and settlements across BC." />
+      <title>Civil Litigation Lawyer | M. Syed Law Corporation — Surrey & White Rock</title>
+      <meta name="description" content="Experienced civil litigation lawyer in South Surrey & White Rock. M. Syed Law Corporation provides strategic representation in disputes, trials, and settlements across BC." />
       <script type="application/ld+json">{JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -28,7 +28,7 @@ const LitigationPage = () => (
         <div className="container mx-auto px-4 max-w-4xl">
           <AnimatedSection>
             <div className="prose prose-lg max-w-none text-foreground mb-16">
-              <p>At South Rock Law, we understand that legal disputes can be stressful and disruptive. Our litigation practice is built on a commitment to clear communication, thorough preparation, and strategic advocacy designed to achieve the best possible outcome for our clients.</p>
+              <p>At M. Syed Law Corporation, we understand that legal disputes can be stressful and disruptive. Our litigation practice is built on a commitment to clear communication, thorough preparation, and strategic advocacy designed to achieve the best possible outcome for our clients.</p>
               <p>We represent individuals and businesses in a broad range of civil disputes, from breach of contract and property conflicts to employment matters and debt recovery. Whether negotiating a settlement or presenting your case at trial, we bring diligence and determination to every matter.</p>
               <h2 className="text-2xl font-bold text-primary mt-12 mb-4">Our Approach</h2>
               <ul className="space-y-2 text-muted-foreground">

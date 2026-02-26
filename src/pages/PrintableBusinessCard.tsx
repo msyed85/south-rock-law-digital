@@ -29,7 +29,7 @@ const PrintableBusinessCard = () => {
               <div className="flex-1 flex items-center justify-center">
                 <img 
                   src={logo} 
-                  alt="South Rock Law" 
+                  alt="M. Syed Law Corporation" 
                   className="w-[60%] h-auto object-contain"
                 />
               </div>
@@ -56,11 +56,11 @@ const PrintableBusinessCard = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={14} className="text-accent shrink-0" />
-                  <span className="text-sm text-foreground">info@southrocklaw.ca</span>
+                  <span className="text-sm text-foreground">info@mslc.ca</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Globe size={14} className="text-accent shrink-0" />
-                  <span className="text-sm text-foreground">www.southrocklaw.ca</span>
+                  <span className="text-sm text-foreground">www.mslc.ca</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <MapPin size={14} className="text-accent shrink-0 mt-0.5" />

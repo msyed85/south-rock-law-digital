@@ -7,12 +7,12 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | SRL - South Rock Law</title>
-        <meta name="description" content="Learn about South Rock Law's experienced legal team based in South Surrey & White Rock, providing trusted expertise and client-focused service across British Columbia." />
+        <title>About Us | MSLC - M. Syed Law Corporation</title>
+        <meta name="description" content="Learn about M. Syed Law Corporation's experienced legal team based in South Surrey & White Rock, providing trusted expertise and client-focused service across British Columbia." />
       </Helmet>
       <div className="min-h-screen">
         <PageHero 
-          title="About South Rock Law"
+          title="About M. Syed Law Corporation"
           subtitle="Your trusted legal counsel committed to excellence and integrity"
           backgroundImage={whiterock8}
         />
