@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/south-rock-law-logo.png";
+import logoWhite from "@/assets/south-rock-law-logo-white.png";
 import { MapPin, Phone, Mail, Linkedin } from "lucide-react";
 
 const Footer = () => {
