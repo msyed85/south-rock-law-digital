@@ -10,7 +10,7 @@ const Header = () => {
   const location = useLocation();
 
   const isHomePage = location.pathname === '/';
-  const logoClass = isHomePage ? "h-24 md:h-28 brightness-0 invert" : "h-24 md:h-28";
+  const logoClass = "h-24 md:h-28";
   const navLinkClass = (path: string) => {
     const isActive = location.pathname === path;
     const baseClass = isHomePage 
