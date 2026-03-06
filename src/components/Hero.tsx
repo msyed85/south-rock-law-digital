@@ -36,12 +36,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-12 animate-fade-in hover-scale">
           <img 
-            src={logo} 
+            src={logoWhite} 
             alt="M. Syed Law Corporation" 
             width={576}
             height={384}
             loading="eager"
-            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
+            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in"
           />
         </div>
         
