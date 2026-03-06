@@ -68,12 +68,12 @@ const Hero = () => {
 
         <div className="text-primary-foreground/90 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <img 
-            src={logo} 
+            src={logoWhite} 
             alt="M. Syed Law Corporation" 
             width={168}
             height={112}
             loading="lazy"
-            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
+            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300"
           />
           <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>
           <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@mslc.ca</p>
