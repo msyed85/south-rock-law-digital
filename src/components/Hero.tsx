@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/south-rock-law-logo-white.png";
+import logoWhite from "@/assets/south-rock-law-logo-white.png";
 import { useState, useEffect } from "react";
 
 // Import all White Rock images
