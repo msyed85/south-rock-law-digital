@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/south-rock-law-logo-white.png";
+import logoWhite from "@/assets/south-rock-law-logo-white.png";
 import { useState, useEffect } from "react";
 
 // Import all White Rock images
@@ -36,12 +36,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <div className="mb-12 animate-fade-in hover-scale">
           <img 
-            src={logo} 
+            src={logoWhite} 
             alt="M. Syed Law Corporation" 
             width={576}
             height={384}
             loading="eager"
-            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in" 
+            className="h-64 md:h-80 lg:h-96 mx-auto drop-shadow-2xl transition-all duration-500 animate-scale-in"
           />
         </div>
         
@@ -68,12 +68,12 @@ const Hero = () => {
 
         <div className="text-primary-foreground/90 space-y-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <img 
-            src={logo} 
+            src={logoWhite} 
             alt="M. Syed Law Corporation" 
             width={168}
             height={112}
             loading="lazy"
-            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300" 
+            className="h-24 md:h-28 mx-auto drop-shadow-xl hover-scale transition-all duration-300"
           />
           <p className="text-lg font-semibold animate-fade-in" style={{ animationDelay: '0.5s' }}>Contact Us Today</p>
           <p className="text-base animate-fade-in" style={{ animationDelay: '0.7s' }}>📞 604-449-7705 | 📧 info@mslc.ca</p>
