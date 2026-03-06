@@ -11,12 +11,12 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <img
-              src={logo}
+              src={logoWhite}
               alt="M. Syed Law Corporation"
               width={168}
               height={112}
               loading="lazy"
-              className="h-24 md:h-28 mb-4 brightness-0 invert"
+              className="h-24 md:h-28 mb-4"
             />
             <p className="text-primary-foreground/80 text-sm mb-4">
               *a Law Corporation
