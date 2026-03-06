@@ -3,15 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/south-rock-law-logo.png";
-import logoWhite from "@/assets/south-rock-law-logo-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
   const isHomePage = location.pathname === '/';
-  const logoSrc = isHomePage ? logoWhite : logo;
-  const logoClass = "h-24 md:h-28";
+  const logoClass = isHomePage ? "h-24 md:h-28 brightness-0 invert" : "h-24 md:h-28";
   const navLinkClass = (path: string) => {
     const isActive = location.pathname === path;
     const baseClass = isHomePage 
