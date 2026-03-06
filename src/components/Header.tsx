@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <img 
-              src={logoSrc} 
+              src={logo} 
               alt="M. Syed Law Corporation" 
               width={168}
               height={112}
